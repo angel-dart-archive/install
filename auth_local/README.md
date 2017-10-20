@@ -31,7 +31,8 @@ AngelConfigurer configureServer(AngelAuth<User> auth, List<int> computePassword(
           'username': username,
         },
       }).then((it) => it.map(User.parse));
-      if (existing.isEmpty)
+      
+      if (users.isEmpty)
         return null;
       var user = users.first;
       var hash = computePassword(password, user);
@@ -39,6 +40,8 @@ AngelConfigurer configureServer(AngelAuth<User> auth, List<int> computePassword(
         return null;
       return user;
     });
+    
+    auth.strategies.add(strategy);
   };
 }
 ```
