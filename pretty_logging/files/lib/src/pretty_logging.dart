@@ -4,8 +4,14 @@ import 'package:logging/logging.dart';
 /// Prints the contents of a [LogRecord] with pretty colors.
 void prettyLog(LogRecord record) async {
   var pen = new TextPen();
-  chooseColor(pen.reset(), record.level);
+  chooseLogColor(pen.reset(), record.level);
   pen(record.toString());
+  
+  if (record.error != null)
+    pen.record.error.toString();
+  if (record.stackTrace != null)
+    pen.record.stackTrace.toString();
+  
   pen();
 }
 
