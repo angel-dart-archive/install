@@ -4,7 +4,7 @@ username+password authentication.
 
 ## Parameters
 * `model`: The name of the model class (default: `User`)
-* `model_path`: The path to the model class, relative to `lib/src` (default: `models/user.dart`).
+* `model_path`: The path to the model class, relative to `lib/src/auth` (default: `../models/user.dart`).
 * `service`: The path of the users service (default: `api/users`).
 * `password_field`: The name of the password field on the user model.
 * `username_field`: The name of the username field on the user model.
@@ -17,7 +17,7 @@ import 'dart:async';
 import 'package:angel_auth/angel_auth.dart';
 import 'package:angel_framework/angel_framework.dart';
 import 'package:collection/collection.dart';
-import 'models/user.dart';
+import '../models/user.dart';
 
 /// Configures the server to perform username+password authentication.
 ///
