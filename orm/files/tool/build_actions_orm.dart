@@ -4,9 +4,10 @@ import 'package:source_gen/source_gen.dart';
 
 final List<BuildAction> ormBuildActions = [
   new BuildAction(
-    new PartBuilder([
+    new LibraryBuilder(
       const PostgresOrmGenerator(),
-    ]),
+      generatedExtension: '.orm.g.dart',
+    ),
     '{{ project_name }}',
     inputs: const [
       '{{ inputs }}',
