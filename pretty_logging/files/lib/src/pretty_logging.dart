@@ -8,9 +8,9 @@ void prettyLog(LogRecord record) async {
   pen(record.toString());
   
   if (record.error != null)
-    pen.record.error.toString();
+    pen(record.error.toString());
   if (record.stackTrace != null)
-    pen.record.stackTrace.toString();
+    pen(record.stackTrace.toString());
   
   pen();
 }
