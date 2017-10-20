@@ -15,9 +15,11 @@ import 'package:source_gen/source_gen.dart';
 
 final List<BuildAction> buildActions = [
   new BuildAction(
-    new LibraryBuilder([
-      const PostgresOrmGenerator(),
-    ]),
+      new LibraryBuilder([
+        const PostgresOrmGenerator(),
+      ],
+      generatedExtension: '.orm.g.dart',
+    ),
     '<project-name>',
     inputs: const [
       'lib/src/models/*.dart',
