@@ -11,7 +11,7 @@ Other `auth_*` addons can be plugged in here, simply by passing them the created
 
 ## Generated Code
 ```dart
-library my_project.src.auth;
+library <project-name>.src.auth;
 
 import 'dart:async';
 import 'package:angel_auth/angel_auth.dart';
