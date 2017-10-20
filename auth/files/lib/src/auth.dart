@@ -3,6 +3,7 @@ library {{ project_name }}.src.auth;
 import 'dart:async';
 import 'package:angel_auth/angel_auth.dart';
 import 'package:angel_framework/angel_framework.dart';
+import '{{ model_path }}';
 
 /// Configures the server to issue and verify JWT's.
 Future configureServer(Angel app) async {
