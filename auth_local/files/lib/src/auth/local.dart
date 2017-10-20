@@ -19,7 +19,7 @@ AngelConfigurer configureServer(AngelAuth<{{ model }}> auth, List<int> computePa
         },
       }).then((it) => it.map({{ model }}.parse));
       
-      if (existing.isEmpty)
+      if (users.isEmpty)
         return null;
         
       var user = users.first;
@@ -30,5 +30,7 @@ AngelConfigurer configureServer(AngelAuth<{{ model }}> auth, List<int> computePa
         
       return user;
     });
+    
+    auth.strategies.add(strategy);
   };
 }
