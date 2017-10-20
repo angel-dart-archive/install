@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:angel_auth/angel_auth.dart';
 import 'package:angel_framework/angel_framework.dart';
 
+/// Configures the server to issue and verify JWT's.
 Future configureServer(Angel app) async {
   var auth = new AngelAuth<{{ model }}>(
     jwtKey: app.configuration['jwt_secret'],
