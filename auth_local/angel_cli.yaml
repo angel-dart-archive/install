@@ -17,3 +17,7 @@ values:
     type: prompt
     default: password
     description: Name of the password field on the user model
+  username_field:
+    type: prompt
+    default: username
+    description: Name of the username field on the user model
