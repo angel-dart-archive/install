@@ -11,9 +11,8 @@ username+password authentication.
 
 ## Generated Code
 ```dart
-library reflection.src.auth.local;
+library <project-name>.src.auth.local;
 
-import 'dart:async';
 import 'package:angel_auth/angel_auth.dart';
 import 'package:angel_framework/angel_framework.dart';
 import 'package:collection/collection.dart';
