@@ -35,3 +35,5 @@ import 'build_actions.dart';
 
 main() => watch(buildActions, deleteFilesByDefault: true);
 ```
+
+Also generates IntellIJ run configurations.
