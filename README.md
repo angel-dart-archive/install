@@ -6,6 +6,7 @@ Feel free to submit a PR; the more add-ons, the better.
 
 # Creating an Add-on
 Each add-on should:
+* Include adequate documentation, i.e. explain what it generates.
 * Accomplish **one** thing.
 * Be modular. Ideally, an add-on is implemented as an Angel plug-in, or some other function (i.e. a request handler).
 * Be formatted cleanly, using `dartfmt`.
