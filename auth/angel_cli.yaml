@@ -9,3 +9,7 @@ values:
     type: prompt
     default: User
     description: Name of user model class
+  model_path:
+    type: prompt
+    default: "models/user.dart"
+    description: "Path to user model, relative to \"lib/src\""
