@@ -11,6 +11,7 @@ Each add-on should:
 * Be modular. Ideally, an add-on is implemented as an Angel plug-in, or some other function (i.e. a request handler).
 * Be formatted cleanly, using `dartfmt`.
 * Not conflict with any other add-ons. Users **must** be able to install your add-on without it breaking their project.
+* Generate IntelliJ run configurations, if need be.
 
 Your add-on **must** have a `pubspec.yaml` with a `name`, `version`, and `description`.
 `dependencies` and `dev_dependencies` will be installed if present.
