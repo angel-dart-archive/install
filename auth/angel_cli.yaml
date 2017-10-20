@@ -1,0 +1,11 @@
+templates:
+  - lib/src/auth.dart
+values:
+  service:
+    type: prompt
+    default: "api/users"
+    description: Path to users service
+  model:
+    type: prompt
+    default: User
+    description: Name of user model class
