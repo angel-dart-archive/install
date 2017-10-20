@@ -1,6 +1,6 @@
 # auth
 This add-on generates a simple boilerplate for using `package:angel_auth` to perform
-JWT authorization.
+JWT authentication.
 
 Other `auth_*` addons can be plugged in here, simply by passing them the created `auth` object.
 
