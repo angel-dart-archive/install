@@ -22,3 +22,5 @@ main() async {
   ]);
 }
 ```
+
+Also generates an IntelliJ run configuration.
