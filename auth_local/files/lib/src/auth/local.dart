@@ -6,14 +6,14 @@ import 'package:angel_framework/angel_framework.dart';
 import 'package:collection/collection.dart';
 import '{{ model_path }}';
 
-/// Configures the server to perform username+password authentication.
+/// Configures the server to perform {{ username_field }}+{{ password_field }} authentication.
 AngelConfigurer configureServer(AngelAuth<{{ model }}> auth, List<int> computePassword(String {{ password_field }}, {{ model }} user)) {
   return (Angel app) async {
-    var strategy = new LocalAuthStrategy((username, {{ password_field }}) async {
+    var strategy = new LocalAuthStrategy(({{ username_field }}, {{ password_field }}) async {
       var userService = app.service('{{ service }}');
       Iterable<{{ model }}> users = await userService.index({
         'query': {
-          'username': username,
+          '{{ username_field }}': {{ username_field }},
         },
       }).then((it) => it.map({{ model }}.parse));
       
