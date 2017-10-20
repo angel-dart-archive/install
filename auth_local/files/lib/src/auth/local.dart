@@ -7,6 +7,8 @@ import 'package:collection/collection.dart';
 import '{{ model_path }}';
 
 /// Configures the server to perform {{ username_field }}+{{ password_field }} authentication.
+///
+/// [computePassword] should be a function that generates a list of bytes, ex. a SHA256 hash.
 AngelConfigurer configureServer(AngelAuth<{{ model }}> auth, List<int> computePassword(String {{ password_field }}, {{ model }} user)) {
   return (Angel app) async {
     var strategy = new LocalAuthStrategy(({{ username_field }}, {{ password_field }}) async {
