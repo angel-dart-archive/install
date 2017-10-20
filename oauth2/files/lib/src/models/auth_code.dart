@@ -1,4 +1,4 @@
-library auth_hf.src.models.auth_code;
+library {{ project_name }}.src.models.auth_code;
 
 import 'package:angel_model/angel_model.dart';
 import 'package:angel_serialize/angel_serialize.dart';
