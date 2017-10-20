@@ -29,9 +29,6 @@ class AuthToken extends _AuthToken {
   int lifeSpan;
 
   @override
-  Application application;
-
-  @override
   DateTime createdAt;
 
   @override
@@ -45,7 +42,6 @@ class AuthToken extends _AuthToken {
       this.refreshToken,
       this.scopes,
       this.lifeSpan,
-      this.application,
       this.createdAt,
       this.updatedAt});
 
@@ -58,11 +54,6 @@ class AuthToken extends _AuthToken {
         refreshToken: data['refresh_token'],
         scopes: data['scopes'],
         lifeSpan: data['life_span'],
-        application: data['application'] == null
-            ? null
-            : (data['application'] is Application
-                ? data['application']
-                : new Application.fromJson(data['application'])),
         createdAt: data['created_at'] is DateTime
             ? data['created_at']
             : (data['created_at'] is String
@@ -83,7 +74,6 @@ class AuthToken extends _AuthToken {
         'refresh_token': refreshToken,
         'scopes': scopes,
         'life_span': lifeSpan,
-        'application': application,
         'created_at': createdAt == null ? null : createdAt.toIso8601String(),
         'updated_at': updatedAt == null ? null : updatedAt.toIso8601String()
       };
