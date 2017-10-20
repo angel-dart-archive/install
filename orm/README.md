@@ -26,4 +26,5 @@ final List<BuildAction> buildActions = [
 ];
 ```
 
-The add-on also generates a `tool/migrate.dart` file and sample migration.
+The add-on also generates a `tool/migrate.dart` file and sample migration, as well as
+IntellIJ run configurations.
