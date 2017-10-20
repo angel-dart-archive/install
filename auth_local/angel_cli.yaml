@@ -1,5 +1,5 @@
 templates:
-  - lib/src/auth.dart
+  - lib/src/auth/local.dart
 values:
   service:
     type: prompt
