@@ -2,4 +2,4 @@ name: pretty_logging
 version: 1.0.0
 description: A helper function to print pretty log messages to the console.
 dependencies:
-  console: ^2.0.0
+  console: ^2.2.4
