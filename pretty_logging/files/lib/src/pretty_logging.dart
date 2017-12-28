@@ -2,7 +2,7 @@ import 'package:console/console.dart';
 import 'package:logging/logging.dart';
 
 /// Prints the contents of a [LogRecord] with pretty colors.
-void prettyLog(LogRecord record) async {
+void prettyLog(LogRecord record) {
   var pen = new TextPen();
   chooseLogColor(pen.reset(), record.level);
   pen(record.toString());
