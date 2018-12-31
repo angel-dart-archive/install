@@ -1,3 +1,6 @@
+# ARCHIVED
+Most of the boilerplate that this repo intended to resolve has been solved, because `package:build_config` allows users to use `build.yaml` files to simplify builder configuration. Adding things like the ORM and model serialization is really now as simple as installing dependencies.
+
 # install
 The repository for `angel install` add-ons.
 
